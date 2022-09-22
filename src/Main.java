@@ -12,6 +12,21 @@ public class Main {
             }
         }
         System.out.println();
+
+        // Задание №2
+        System.out.println("======================= Задание №2 =======================");
+        List<Integer> tempListNums = new ArrayList<>(nums);
+        Set<Integer> tempSetNums = new HashSet<>();
+        for (Integer tempListNum : tempListNums) {
+            if (tempListNum % 2 == 0) {
+                tempSetNums.add(tempListNum);
+            }
+        }
+        tempListNums.clear();
+        tempListNums.addAll(tempSetNums);
+        Collections.sort(tempListNums);
+        System.out.println(tempListNums);
     }
+}
 
 }
