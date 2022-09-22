@@ -26,7 +26,15 @@ public class Main {
         tempListNums.addAll(tempSetNums);
         Collections.sort(tempListNums);
         System.out.println(tempListNums);
+
+        // Задание №3
+        System.out.println("======================= Задание №3 =======================");
+        List <String> words = new ArrayList<>(List.of("окно", "мыло", "село", "капуста", "окно", "село"));
+        Set<String> uniqueWord = new HashSet<>(words);
+        System.out.println(uniqueWord);
+
+
     }
-}
+
 
 }
